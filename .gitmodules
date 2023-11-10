@@ -1,0 +1,3 @@
+[submodule "snake-ai"]
+	path = snake-ai
+	url = https://github.com/brandon12277/AIsnake.git

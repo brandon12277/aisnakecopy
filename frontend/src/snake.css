@@ -1,0 +1,270 @@
+body,html{
+    width:100%;
+    
+    display:flex;
+    background-color:#13322B;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#game-cont{
+    
+    width:100%;
+   
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:2%;
+    
+
+}
+.game-description{
+    
+    width:100%;
+    display:flex;
+    gap:30%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+.descp{
+    z-index:10;
+    width:20%;
+    
+    
+}
+#start-butt{
+    cursor: pointer;
+    color: white;
+    margin-top: 5%;
+    font-family: 'Roboto Condensed', sans-serif;
+    outline: none;
+    background: none;
+    border : #40ad94 1px solid;
+    border-radius: 0.35em;
+    padding:2%;
+    width:10%;
+}
+.snake{
+    width:200px;
+    height:20px;
+    background-color: green;
+}
+.food{
+    width:20px;
+    height:20px;
+    background-color: #ba403d;
+}
+
+
+::-webkit-scrollbar{
+    background-color:#13322B;
+}
+.network{
+    width:600px;
+    height:370px;
+    margin-bottom: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1c1c;
+
+}
+#game_board{
+    margin-bottom: 4%;
+    border: 10px solid #235f51;
+}
+#data{
+    position:absolute;
+    top:0;
+    color: white;
+}
+.description{
+    z-index:10;
+    width:70%;
+    padding: 5%;
+    border : 4px solid grey;
+    border-style: dashed;
+    background-color: #235f51;
+    color:rgb(221, 221, 221);
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    margin-bottom: 2%;
+   
+}
+line {
+    stroke: yellow; /* Line color */
+    stroke-width: 2; /* Line width */
+}
+
+
+
+text {
+    font-size: 16px;
+    fill: white; /* Text color */
+    text-anchor: middle; /* Center text horizontally */
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.highlighted {
+    fill: yellow; /* Change to the desired highlight color */
+    
+}
+
+#Enter{
+    cursor: pointer;
+    outline:none;
+    background: none;
+    padding:1% 2% 1% 2%;
+    border: 1px solid #40ad94;
+    
+    font-family: 'Roboto Condensed', sans-serif;
+    color:white;
+}
+#Restart{
+    cursor: pointer;
+    outline:none;
+    background: none;
+    padding:1% 2% 1% 2%;
+    border: 1px solid #40ad94;
+    
+    font-family: 'Roboto Condensed', sans-serif;
+    color:white;
+}
+#Exit{
+    cursor: pointer;
+    outline:none;
+    background: none;
+    padding:1% 2% 1% 2%;
+    border: 1px solid #40ad94;
+    
+    font-family: 'Roboto Condensed', sans-serif;
+    color:white;
+}
+.game-box{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    justify-content: center;
+    gap:5%;
+}
+
+.levels{
+    width:100%;
+    display: flex;
+    align-items: center;
+    gap:5%;
+   justify-content: center;
+}
+.level{
+    font-family: 'Roboto Condensed', sans-serif;
+    width:10%;
+    border: 1px #40ad94 solid;
+ 
+    border-radius: 0.45em;
+    padding:1%;
+    color:white;
+}
+#level_1{
+    background-color: #40ad94;
+}
+
+#game-box{
+    display: none;
+}
+
+#loading{
+    z-index:20;
+    display:none;
+    flex-direction: column;
+    font-family: 'Roboto Condensed', sans-serif;
+    width:20%;
+    height:50px;
+    color:white;
+    font-size: large;
+}
+#load,#load2{
+   
+    display:flex;
+    
+    background-color: #40ad94;
+    width:0px;
+    height:30px;
+    color:white;
+}
+#logo{
+    width:200px;
+    height:auto;
+    margin-bottom: 2%;
+}
+#restart{
+    display: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    gap:5%;
+    z-index:9999;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgb(0,0,0,0.7);
+    font-size: 200%;
+    color:white;
+}
+
+/* .snake_design1{
+    position: absolute;
+    top:10px;
+    left: 10px;
+    width:100px;
+    height:60px;
+    background-color: green;
+}
+.snake_design2{
+    position: absolute;
+    top:10px;
+    left: 10px;
+    width:60px;
+    height:500px;
+    background-color: green;
+}
+.snake_design3{
+    position: absolute;
+    top:10px;
+    left: 60px;
+    width:500px;
+    height:60px;
+    background-color: green;
+}
+.food_design{
+    position : absolute;
+    top:100px;
+    left:900px;
+    width:40px;
+    height:40px;
+   
+    background-color: red;
+
+} */
+
+.blackscreen{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index:9999;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgb(0,0,0,0.5);
+}

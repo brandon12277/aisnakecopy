@@ -1,0 +1,48 @@
+.des_1{
+
+    
+border: 1px solid #1c1c1c;
+border-style: dashed;
+    z-index:0;
+   position: absolute;
+   top:10px;
+   left:5px;
+   width:20%;
+   height:5%;
+   background-color: #8dc986;
+}
+.des_2{
+    border: 1px solid #1c1c1c;
+border-style: dashed;
+    z-index:0;
+    position: absolute;
+    top:10px;
+    left:20%;
+    height:70%;
+    width:1%;
+    padding:1%;
+    background-color: #8dc986;
+}
+.des_3{
+    border: 1px solid #1c1c1c;
+border-style: dashed;
+    z-index:0;
+    position: absolute;
+    top:70%;
+    left:20%;
+    height:5%;
+    width:20%;
+    background-color: #8dc986;
+}
+.des_4{
+    border: 1px solid #1c1c1c;
+border-style: dashed;
+    z-index:0;
+    position: absolute;
+    top:60%;
+    left:60%;
+    height:2%;
+    width:1%;
+    padding:1%;
+    background-color:#ba403d;
+}

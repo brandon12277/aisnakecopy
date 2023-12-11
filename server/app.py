@@ -18,9 +18,10 @@ one_hot = joblib.load("onehot_object_2.pkl")
 
 
 
-@app.route('/snake/move', methods=['POST','OPTIONS'])
+@app.route('/snake/move', methods=['POST'])
 def get_data():
-     if request.method == 'OPTIONS':
+    
+         print(request.headers)
          data = request.json
          move = []
          snakeX = data.get('snakeX')
@@ -44,11 +45,11 @@ def get_data():
          response.headers.add('Access-Control-Allow-Methods', 'POST')
          return response
    
-@app.after_request   
-def after_request(response):
-    response.headers.add('Access-Control-Allow-Headers', 'Content-Type')
-    response.headers.add('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
-    return response
+#@app.after_request   
+#def after_request(response):
+ #   response.headers.add('Access-Control-Allow-Headers', 'Content-Type')
+ #   response.headers.add('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
+ #   return response
 
 if __name__ == '__main__':
     app.run(debug=True)

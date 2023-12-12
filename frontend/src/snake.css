@@ -76,7 +76,8 @@ body,html{
 }
 #game_board{
     margin-bottom: 4%;
-    border: 10px solid #235f51;
+    border: 5px solid #235f51;
+    border-style: dashed;
 }
 #data{
     position:absolute;
@@ -120,10 +121,16 @@ text {
     outline:none;
     background: none;
     padding:1% 2% 1% 2%;
-    border: 1px solid #40ad94;
-    
+    border: 3px solid #40ad94;
+    border-radius: 0.45em;
+    border-style: dashed;
     font-family: 'Roboto Condensed', sans-serif;
     color:white;
+    transition : 1s;
+}
+#Enter:hover{
+    background-color: #40ad94;
+
 }
 #Restart{
     cursor: pointer;
